@@ -1,0 +1,97 @@
+.contain {
+	/* background-color: pink; */
+	padding: 0px !important;
+}
+
+.row {
+	background-color: #141414;
+}
+
+.movie-info-text,
+.movie-info-categories {
+	padding: 30px 60px;
+}
+
+.video-cointainer {
+	display: block;
+	margin: auto;
+	height: 800px;
+	position: relative;
+}
+
+.movie-info {
+	position: absolute;
+	bottom: 0px;
+	padding: 50px;
+}
+
+.movie-info-description {
+	display: inline;
+}
+
+.description-text {
+	font-weight: bold;
+	color: white;
+}
+
+.votes {
+	color: #539966;
+}
+
+.movie-title {
+	display: flex;
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+.movie-description {
+	color: white;
+}
+
+.movie-extra-info,
+.movie-extra-info-cast {
+	display: inline;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.movie-extra-info-badget {
+	color: rgba(128, 128, 128, 0.677);
+	font-weight: bold;
+}
+
+.movie-img {
+	height: 100%;
+	width: 100%;
+}
+
+.movie-btn {
+	border-radius: 8px;
+	padding: 10px 15px;
+	margin-right: 5px;
+	background-color: transparent;
+	color: white;
+	border: solid 1px white;
+}
+
+.movie-btn:focus {
+	background-color: white;
+	color: black;
+}
+
+.movie-btn:hover {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-play {
+	background-color: white;
+	color: black;
+}
+
+.btn-play:focus {
+	background-color: transparent;
+	border: solid 1px white;
+	color: white;
+}

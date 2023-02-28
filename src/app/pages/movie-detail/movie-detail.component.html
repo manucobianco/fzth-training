@@ -1,0 +1,40 @@
+<div class="contain mt-5 p-5">
+    <div class="video-cointainer">
+			<div class="movie-info">
+				<span class="movie-title">{{ movieData.title }}</span>
+				<button class="movie-btn btn-play" routerLink="/player">Play now</button>
+				<button class="movie-btn" routerLink="/player">Watch later</button>
+			</div>
+			<img class="movie-img" src="https://image.tmdb.org/t/p/original/{{ movieData.backdrop_path }}" alt="...">		
+			<div class="row">
+				<div class="movie-info-text col-lg-8">
+					<div class="row movie-info-description">
+						<span class="description-text votes">{{ movieData.vote_average.toFixed(1) }} from {{ movieData.vote_count }} votes</span>
+						<span class="description-text">{{ movieData.release_date.substring(0,4) }}</span>
+						<span class="description-text">{{ movieData.runtime }}m</span>						
+					</div>
+					<div class="row">
+						<span class="movie-description">{{ movieData.overview }}</span>
+					</div>
+				</div>
+				<div class="movie-info-categories col-lg-4">
+					<div class="row" >
+						<div class="row movie-extra-info">
+							<span class="movie-extra-info-badget">Genres</span>
+							<ng-container *ngFor="let gene of movieData.genres">
+								<span>{{ gene.name }}</span>
+							</ng-container>
+						</div>
+						<div class="row movie-extra-info">
+							<span class="movie-extra-info-badget">Cast</span> 
+							<span class="movie-extra-info-cast"> Julianne Moore, Sebastian Stan, Justice Smith</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <!-- <fa-icon [icon]="faPlus"></fa-icon>
+    <fa-icon [icon]="faThumbsUp"></fa-icon> -->
+  
+  </div>

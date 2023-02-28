@@ -1,0 +1,12 @@
+<div class="contain-fuild">
+  <vg-player (onPlayerReady)="onPlayerSet($event)">
+    <!-- <vg-controls>
+        <vg-play-pause vgFor="my-video"></vg-play-pause>
+    </vg-controls> -->
+    
+    <!-- delete the "controls" param to make the custom control bar -->
+    <video [vgMedia]="$any(media)" #media preload="auto" controls autoplay>
+      <source src="https://storage.googleapis.com/exoplayer-test-media-1/gen-3/screens/dash-vod-single-segment/video-avc-baseline-480.mp4"/>
+    </video>
+  </vg-player>
+</div>
